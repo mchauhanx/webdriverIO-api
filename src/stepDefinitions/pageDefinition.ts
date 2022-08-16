@@ -10,5 +10,5 @@ Then(/^the user enter details on Welcome page$/, async () => {
 });
 
 Then(/^the user scans the QR code$/, async() => {
-  Login.testPOC()
+  Login.scanQR()
 });

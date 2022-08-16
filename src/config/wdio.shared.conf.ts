@@ -26,7 +26,7 @@ export const config: Options.Testrunner = {
     waitforTimeout: 20000,
     connectionRetryTimeout: 120000,
     connectionRetryCount: 3,
-    services: ['chromedriver'],
+    services: ['chromedriver', 'devtools', 'intercept'],
     framework: 'cucumber',
     reporters: ['spec'],
     cucumberOpts: {

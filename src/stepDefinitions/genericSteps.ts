@@ -1,9 +1,13 @@
 import { Given, Then } from '@wdio/cucumber-framework';
+import cdp from '@wdio/devtools-service' 
+import Login from '../pageObjects/login.page'
 
 require('dotenv').config();
 
 Given(/^the user launches the url$/, async () => {
-  await browser.url(process.env.APP_URL);
+  Login.getInvitation()
+    browser.url('https://test-studio.oliu.id/login')
+  // await browser.url(process.env.APP_URL);
   await browser.maximizeWindow();
 });
 

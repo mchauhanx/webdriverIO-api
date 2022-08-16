@@ -1,14 +1,12 @@
-import { Then } from '@wdio/cucumber-framework';
+import { Then } from '@wdio/cucumber-framework'
 
-
-import Welcome from '../pageObjects/welcome.page';
+import Welcome from '../pageObjects/welcome.page'
 import Login from '../pageObjects/login.page'
-const fs = require('fs')
 
-require('dotenv').config();
+require('dotenv').config()
 
 Then(/^the user enter details on Welcome page$/, async () => {
-  Welcome.enterPersonalDetails();
+  Welcome.enterPersonalDetails()
 });
 
 Then(/^the user scans the QR code$/, async() => {

@@ -2,7 +2,7 @@
   "login" :
    {
         "@type": "did:sov:BzCbsNYhMrjHiqZDTUASHg;spec/out-of-band/1.0/invitation",
-        "@id": "26d7a79f-8ac1-4788-b07d-b8025e53c940",
+        "@id": "50c501e8-43b6-4574-9e34-584779a7cd36",
         "handshake_protocols": [
             "did:sov:BzCbsNYhMrjHiqZDTUASHg;spec/connections/1.0"
         ],

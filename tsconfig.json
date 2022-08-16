@@ -6,8 +6,10 @@
         "types": [
             "node",
             "webdriverio/async",
+            "webdriverio",
             "@wdio/cucumber-framework",
-            "expect-webdriverio"
+            "expect-webdriverio",
+            "wdio-intercept-service",
         ],
         "target": "es2019"
     }

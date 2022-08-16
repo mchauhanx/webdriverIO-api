@@ -17,7 +17,7 @@ Feature: Oliu Studio POC
     # Then the user click on "Confirm & Pay"
     Then the user waits for "2" seconds
     Then the user scans the QR code
-    Then the user waits for "10" seconds
+    Then the user waits for "30" seconds
 
     Examples: 
       | name     | mobileNumber | billingAddress | postalCode |

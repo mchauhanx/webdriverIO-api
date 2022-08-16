@@ -6,8 +6,7 @@ require('dotenv').config();
 
 Given(/^the user launches the url$/, async () => {
   Login.getInvitation()
-    browser.url('https://test-studio.oliu.id/login')
-  // await browser.url(process.env.APP_URL);
+  await browser.url(process.env.APP_URL);
   await browser.maximizeWindow();
 });
 

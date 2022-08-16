@@ -15,7 +15,7 @@ Feature: Oliu Studio POC
     # Then in iframe "1" the user enters text "12/24" in textbox with placeholder "MM/YY"
     # Then in iframe "2" the user enters text "123" in textbox with placeholder "CVC Number"
     # Then the user click on "Confirm & Pay"
-    Then the user waits for "2" seconds
+    Then the user waits for "20" seconds
     Then the user scans the QR code
     Then the user waits for "30" seconds
 

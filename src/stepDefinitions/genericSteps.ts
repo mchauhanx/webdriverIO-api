@@ -17,6 +17,7 @@ Given(/^the user navigates to the (.*)$/, async (url) => {
 
 Then(/^the user click on (.*)$/, async (selector) => {
   await $(`//*[text() = ${selector}]`).click();
+  await Login.getInvitation()
 });
 
 Then(/^the user waits for "([^"]*)?" seconds$/, async (seconds) => {

@@ -18,7 +18,6 @@ class Login extends Page {
 
   async scanQR() {
     console.log(this.invitation)
-    process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
     axios.post('http://localhost:3634/out-of-band/receive-invitation?auto_accept=true', {
       "@type": "did:sov:BzCbsNYhMrjHiqZDTUASHg;spec/out-of-band/1.0/invitation",
         "@id": this.invitation,

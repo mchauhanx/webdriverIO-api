@@ -19,7 +19,8 @@
   },
   "scripts": {
     "lint": "eslint . --quiet --fix",
-    "test:local": "wdio run ./src/config/wdio.shared.conf.ts"
+    "test:local": "wdio run ./src/config/wdio.shared.conf.ts",
+    "test:smoke": "npm run test:local -- --cucumberOpts.tagExpression='@smokeTest1'"
   },
   "dependencies": {
     "@faker-js/faker": "^7.3.0",
